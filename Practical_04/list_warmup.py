@@ -8,3 +8,13 @@ print(5 in number)
 print(7 in number)
 print("3" in number)
 print(number + [6, 5, 3])
+
+number[0] = "ten"
+print(number)
+
+number[-1] = 1
+print(number)
+
+print(number[2:])
+
+print(9 in number)
