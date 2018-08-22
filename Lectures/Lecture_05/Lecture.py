@@ -14,7 +14,4 @@ def find_oldest(names, ages):
         print(i)
 
 
-
-
-
 main()
