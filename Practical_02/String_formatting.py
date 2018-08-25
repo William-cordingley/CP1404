@@ -14,13 +14,14 @@ print("My {0} was first made in {1} (that's right, {1}!)".format(name, year))
 print("My {} would cost ${:,.2f}".format(name, cost))
 
 # Aligning columns:
-numbers = [1, 19, 123, 456, -25]
+numbers = [1, 19, 123, 456, -25, 123456]
+
 for i in range(len(numbers)):
     print("Number {0} is {1:>5}".format(i + 1, numbers[i]))
 
 # Another (nicer) version of the above loop using the enumerate function
 for i, number in enumerate(numbers):
-    print("Number {0} is {1:>5}".format(i + 1, number))
+    print("Number {0} is {1:>8}".format(i + 1, number))
 
 for i in range(0, 101, 50):
     print("{:3}".format(i))
