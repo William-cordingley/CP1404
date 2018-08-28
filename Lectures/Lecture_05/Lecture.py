@@ -12,6 +12,4 @@ def main():
 def find_oldest(names, ages):
     for i in enumerate(ages):
         print(i)
-
-
 main()
