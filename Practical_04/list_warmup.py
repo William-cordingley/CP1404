@@ -1,6 +1,6 @@
 number = [3, 1, 4, 1, 5, 9, 2]
 print(number[0])
-#print([number[-1])
+print(number[-1])
 print(number[3])
 print(number[:-1])
 print(number[3:4])
