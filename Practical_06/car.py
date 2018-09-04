@@ -1,12 +1,14 @@
 class Car:
-    def __init__(self, fuel=0):
+    def __init__(self, name="", fuel=0):
+        self.name = name
         self.fuel = fuel
         self.odometer = 0
 
+    def __str__(self):
+        return "{}, Fuel={}, Odometer={})".format(self.name, self.fuel, self.odometer)
 
     def add_fuel(self, amount):
         self.fuel += amount
-
 
     def drive(self, distance):
         if distance > self.fuel:
