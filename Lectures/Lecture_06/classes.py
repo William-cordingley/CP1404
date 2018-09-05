@@ -31,7 +31,8 @@ class Product:
         return "{}, ${:.2f} ({})".format(self.name, self.price, self.is_on_sale)
 
 
-p1 = Product("Phone", 365.4, True)
-# p1.name = "Phone"
-print(p1.name, p1.price, p1.is_on_sale)
-print(p1.GST_RATE)
+if __name__ == '__main__':
+    p1 = Product("Phone", 365.4, True)
+    # p1.name = "Phone"
+    print(p1.name, p1.price, p1.is_on_sale)
+    print(p1.GST_RATE)
