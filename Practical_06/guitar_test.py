@@ -10,6 +10,7 @@ def run_test():
     print(another_guitar.get_age())
     print(my_guitar.is_vintage())
     print(another_guitar.is_vintage())
+    print(Guitar.is_vintage(another_guitar))
 
 
 run_test()
