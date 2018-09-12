@@ -1,0 +1,19 @@
+# nested layout example
+BoxLayout:
+    orientation: "horizontal"
+    Label:
+        # text: "on the side"
+        # id: label_1
+        text: app.message
+    BoxLayout:
+        orientation: "vertical"
+        Button:
+            text: "Hello"
+            on_press: app.press_me(self)
+            size_hint_y: 0.1 # will only take up 10 percent of the screen
+        Button:
+            text: "Click Here"
+            on_press: app.press_me(self)
+        Button:
+            text: "no way!"
+            on_press: app.press_me(self)
