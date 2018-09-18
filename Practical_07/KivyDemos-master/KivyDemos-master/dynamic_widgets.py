@@ -22,7 +22,8 @@ class DynamicWidgetsApp(App):
         super().__init__(**kwargs)
         # basic data example - dictionary of names: phone numbers
         # TODO: After running it, add another entry to the dictionary and see how the layout changes
-        self.phonebook = {"Bob Brown": "0414144411", "Cat Cyan": "0441411211", "Oren Ochre": "0432123456"}
+        self.phonebook = {"Bob Brown": "0414144411", "Cat Cyan": "0441411211", "Oren Ochre": "0432123456",
+                          "William": "0456482810"}
 
     def build(self):
         """

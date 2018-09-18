@@ -12,3 +12,7 @@ class ProgrammingLanguage:
     def is_dynamic(self):
         return self.typing.lower() == "dynamic"
 
+
+if __name__ == "__main__":
+    programlanguage1 = ProgrammingLanguage("luke", "Dynamic", True, 1999)
+    print(programlanguage1)

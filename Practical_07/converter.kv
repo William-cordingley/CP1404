@@ -5,14 +5,15 @@ BoxLayout:
         TextInput:
             id: input_miles
             text: 'Enter Miles'
+            on_text_validate: app.convert_m_to_k()
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'Up'
-                on_press: app.up_down(1)
+                on_press: app.up_down(1), app.convert_m_to_k()
             Button:
                 text: 'Down'
-                on_press: app.up_down(-1)
+                on_press: app.up_down(-1), app.convert_m_to_k()
     Button:
         text: 'Convert miles to Kilometers'
         on_press: app.convert_m_to_k()
