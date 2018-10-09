@@ -26,4 +26,3 @@ if __name__ == "__main__":
     taxi1.drive(18)
     print(taxi1)
     print(taxi1.get_fare())
-    
