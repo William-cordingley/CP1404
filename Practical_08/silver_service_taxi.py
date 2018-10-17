@@ -10,11 +10,12 @@ class SilverServiceTaxi(Taxi):
         self.price_per_km *= fanciness
 
     def __str__(self):
-        return "{}, fuel={}, odo={}, {}km on current fare, ${:.2f}/km plus flagfall of ${:.2f}".format(self.name, self.fuel,
-                                                                                             self.odometer,
-                                                                                             self.current_fare_distance,
-                                                                                             self.price_per_km,
-                                                                                             self.flagfall)
+        return "{}, fuel={}, odo={}, {}km on current fare, ${:.2f}/km plus flagfall of ${:.2f}".format(self.name,
+                                                                                                       self.fuel,
+                                                                                                       self.odometer,
+                                                                                                       self.current_fare_distance,
+                                                                                                       self.price_per_km,
+                                                                                                       self.flagfall)
 
     def get_fare(self):
         return self.flagfall + super().get_fare()
