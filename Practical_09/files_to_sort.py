@@ -64,7 +64,12 @@ def version_2():
     # Change to desired directory
     os.chdir('FilesToSort')
     # Make a new directory
-    types = dict()
+    try:
+        os.mkdir('Images')
+        os.mkdir('Spreadsheets')
+        os.mkdir('Documents')
+    except FileExistsError:
+        pass
 
     # Loop through each file in the (current) directory
     for filename in os.listdir('.'):
@@ -72,20 +77,13 @@ def version_2():
         if os.path.isdir(filename):
             continue
 
-        extension = filename
-
         # sorting files into specific folders
-        if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+        if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
             shutil.move(filename, 'Images/' + filename)
         elif filename.lower().endswith(('.doc', '.docx', '.txt')):
             shutil.move(filename, 'Documents/' + filename)
         elif filename.lower().endswith(('.xls', '.xlsx')):
             shutil.move(filename, 'Spreadsheets/' + filename)
 
-source = ['.flac','ts.mp3']
 
-for files in o:
-   fileName,fileExtension = os.path.splitext(files)
-   print(fileExtension)   # Print File Extensions
-   print(fileName)  # It print file name
-version_1()
+version_2()
