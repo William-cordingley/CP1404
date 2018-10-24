@@ -1,0 +1,38 @@
+Part A (multiple Choice)  (in order of questions)
+    loops
+    errors
+    equality
+    lists
+    function parameters
+    data structures
+    errors
+    inheritance
+    exceptions
+    functions
+    lists
+    recursion
+    dict
+    naming
+    classes
+Part B
+    write names
+    write output [lists,sorting, enumerate, list comprehension, recursion]
+    write code [dictionary and string formatting, dictionary, class, implement pseudocode, files, function and strings, function and tuples]
+    describes version control, compare data structures [similar, differences]
+
+    version control
+        commit
+        push
+        pull request
+        pull
+        push
+        clone
+        git
+        directory
+        commit message
+
+
+    NOT on exam
+        pycharm
+        testing
+        GUI(kivy)
